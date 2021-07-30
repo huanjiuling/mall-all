@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        max-retry: 10
+  application:
+    name: mall-order
+  profiles:
+    active: dev
+

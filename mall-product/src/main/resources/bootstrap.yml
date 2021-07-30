@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mall-product
+  cloud:
+    config:
+      override-none: true
+    nacos:
+      config:
+        server-addr: localhost:8848 #配置中心的地址
+        file-extension: yml #配置文件结尾的配置
+  profiles:
+    active: dev
+logging:
+  level:
+    com:
+      mall:
+        product:
+          dao: debug

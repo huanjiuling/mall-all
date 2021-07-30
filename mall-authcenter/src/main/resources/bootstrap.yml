@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mall-authcenter
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+logging:
+  level:
+    com:
+     alibaba:
+      cloud:
+        nacos:
+          client: warn
